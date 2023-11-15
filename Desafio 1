@@ -1,0 +1,8 @@
+Haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+print (len(Haystack))
+def findNeedle (Haystack, i):
+    for i in Haystack:
+        if i == "needle":
+            return i
+x = i
+print ("Found the needle at position {posição}" .format(posição = x))
