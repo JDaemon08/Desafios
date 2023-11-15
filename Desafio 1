@@ -1,6 +1,6 @@
-Haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
-def findNeedle (Haystack, i):
-    for i in range (len(Haystack)):
-        if Haystack[i] == "needle":
-            return 'There is a needle in position {}' .format(i)
-    return 'There is no needle.'
+haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+
+def findNeedle (haystack):
+    for i in range(len(haystack)):
+        if haystack[i] == "needle":
+            return ('There is a needle in position {}' .format(i))
