@@ -1,6 +1,8 @@
-haystack = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+def solve(s):
+    for i in s:
+        if i.isalpha():
+            s = s.replace(i, " ")
+    return max([int(i) for i in s.split()]) 
 
-def findNeedle (haystack):
-    for i in range(len(haystack)):
-        if haystack[i] == "needle":
-            return ('There is a needle in position {}' .format(i))
+#example
+print(solve('gh12cdy695m1'))
