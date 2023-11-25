@@ -1,0 +1,9 @@
+import math
+def nb_year(p0, percent, aug, p):
+    population = p0
+    year = 0
+    while population < p:
+        growth = population + population * (percent *(10**-2)) + aug
+        population = math.floor(growth)
+        year += 1
+    return year
